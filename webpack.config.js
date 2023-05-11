@@ -1,9 +1,13 @@
 const path = require('path');
+const  webpack = require('webpack');
 module.exports = env => ({
     resolve: {
         extensions: ['.json', '.js', '.jsx'],
         modules: ['node_modules'],
     },
+    plugins: [
+      new webpack.EnvironmentPlugin(['NODE_ENV'])
+  ],
     module: {
         rules: [
           {
@@ -20,8 +24,3 @@ module.exports = env => ({
       }
   });
   
-  new webpack.DefinePlugin({
-    'process.env':{
-      'NODE_ENV': JSON.stringify('production')
-    }
-  })
