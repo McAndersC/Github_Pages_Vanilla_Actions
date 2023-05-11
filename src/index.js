@@ -1,6 +1,6 @@
 import Glide from '@glidejs/glide';
 
-console.log('Initializing app...sjjjjjjj')
+console.log('Initializing app...sjjjjjjjFFFFFFFF')
 
 const glide = new Glide('.glide', {
     type: 'carousel',
