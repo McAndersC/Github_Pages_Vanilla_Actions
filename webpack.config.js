@@ -1,5 +1,5 @@
 const path = require('path');
-const  webpack = require('webpack');
+const webpack = require('webpack');
 module.exports = env => ({
     resolve: {
         extensions: ['.json', '.js', '.jsx'],
@@ -9,7 +9,7 @@ module.exports = env => ({
       new webpack.DefinePlugin({
         process: {
           env: {
-            NODE_ENV: "production"
+            NODE_ENV: "development"
           }
         }
       }),
