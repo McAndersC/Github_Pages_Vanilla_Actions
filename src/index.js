@@ -1,5 +1,7 @@
 import Glide from '@glidejs/glide';
 
+console.log('Initializing app...')
+
 const glide = new Glide('.glide', {
     type: 'carousel',
     perView: 1,
@@ -8,3 +10,4 @@ const glide = new Glide('.glide', {
 })
 
 glide.mount();
+
