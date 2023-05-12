@@ -22,7 +22,8 @@
   },
   "homepage": "https://github.com/McAndersC/Github_Pages_Vanilla_Actions#readme",
   "dependencies": {
-    "@glidejs/glide": "^3.6.0"
+    "@glidejs/glide": "^3.6.0",
+    "babel-loader": "^9.1.2"
   },
   "devDependencies": {
     "css-loader": "^6.7.3",
