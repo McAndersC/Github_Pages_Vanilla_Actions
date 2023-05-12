@@ -14,14 +14,7 @@ module.exports = env => ({
         }
       }),
   ],
-    module: {
-        rules: [
-          {
-            test: /\.css$/i,
-            use: ["style-loader", "css-loader"],
-          },
-        ],
-      },
+
     entry: './src/index.js',
     mode: 'development',
     output: {
