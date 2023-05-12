@@ -14,7 +14,19 @@ module.exports = env => ({
         }
       }),
   ],
-
+    module: {
+      rules: [
+        {
+          test: /\.(js|jsx)$/,
+          exclude: /node_modules/,
+          use: ['babel-loader']
+        },
+        {
+          test: /\.(css)$/,
+          use: ['style-loader','css-loader']
+        }
+      ]
+  },
     entry: './src/index.js',
     mode: 'development',
     output: {
