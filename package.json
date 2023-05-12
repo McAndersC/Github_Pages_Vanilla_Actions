@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "engines" : { 
-    "npm" : ">=8.0.0 <9.0.0",
-    "node" : ">=16.0.0 <17.0.0"
+  "engines": {
+    "npm": ">=8.0.0 <9.0.0",
+    "node": ">=16.0.0 <17.0.0"
   },
   "scripts": {
-    "build": "webpack --config webpack.config.js"
+    "build": "sass src/styles/index.scss src/index.css && webpack --mode none --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -26,6 +26,7 @@
   },
   "devDependencies": {
     "css-loader": "^6.7.3",
+    "sass": "^1.62.1",
     "webpack": "^5.82.1",
     "webpack-cli": "^5.1.1"
   }

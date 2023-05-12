@@ -1,7 +1,7 @@
-import '~@glidejs/glide/dist/css/glide.core.min.css';
+
 import Glide from '@glidejs/glide';
 
-console.log('Initializing app...sjjjjjjjFFFFFFFF')
+console.log('Initializing app')
 
 const glide = new Glide('.glide', {
     type: 'carousel',
